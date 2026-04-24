@@ -14,8 +14,13 @@ data = json.load(pokedex)
 #     print(d["name"][lang])
 
 
-user = input("Pick a Pokemon type: Normal, Fighting, Flying, Poison, Ground, Rock, Bug, Ghost, Steel, Fire, Water, Grass, Electric, Psychic, Ice, Dragon, Dark, Fairy")
-
+psearch = input("Input a keyword for Pokemon         ")
 for d in data:
-    print(d["Ice"])
+    if psearch in (d["name"]["english"]):
+        print (d["name"]["english"])
+
+# tsearch = input("Input a type           ")
+# for thomas in data:
+#     if tsearch in (thomas["type"]):
+#         print(thomas["name"]["english"])
 
